@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="628D42BB-7C6B-08E1-06BB-A44551035F27" name="FUNCIONARIO">
+<createdBy>gandr</createdBy>
+<createdTime>2025-12-04 22:54:00 UTC</createdTime>
+<generatorID>591E03F7-7F21-5799-B33C-CB1653EA63C7</generatorID>
+<ownerDesignName>biblioteca</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_funcionario" id="6B5D4ECE-F2CF-BB2C-7982-9468BA670DD0">
+<createdBy>gandr</createdBy>
+<createdTime>2025-12-04 22:54:00 UTC</createdTime>
+<generatorID>B1B221C6-0586-2AA2-CC5C-914E604087AA</generatorID>
+<ownerDesignName>biblioteca</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_funcionario" id="E7CF6BBA-0C30-6ED2-33C8-2FCC71BFD267">
+<createdBy>gandr</createdBy>
+<createdTime>2025-12-04 22:54:00 UTC</createdTime>
+<generatorID>DCD58A76-36C6-1129-027E-3B1C8F2F3258</generatorID>
+<ownerDesignName>biblioteca</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_cargo_funcionario" id="1928B457-4E34-D6A1-40AF-44A2852834DD">
+<createdBy>gandr</createdBy>
+<createdTime>2025-12-04 22:54:00 UTC</createdTime>
+<generatorID>8423C1E3-AAC3-08D8-DE0F-1F0332BEB170</generatorID>
+<ownerDesignName>biblioteca</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cd_telefone_funcionario" id="C4C15DF9-BD93-9C45-FDD5-4670EB8EC87B">
+<createdBy>gandr</createdBy>
+<createdTime>2025-12-04 22:54:00 UTC</createdTime>
+<generatorID>DCDF1647-F490-200E-A9ED-E1D54B95F623</generatorID>
+<ownerDesignName>biblioteca</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cd_email_funcionario" id="8833F071-BDD5-A487-3EE6-CED8CFDD7A2C">
+<createdBy>gandr</createdBy>
+<createdTime>2025-12-04 22:54:00 UTC</createdTime>
+<generatorID>F5147AE6-865A-D0DF-449A-8410759DBD73</generatorID>
+<ownerDesignName>biblioteca</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2E48D635-28EB-F6B9-66FC-B9284C0650D6" name="FUNCIONARIO_PK">
+<createdBy>gandr</createdBy>
+<createdTime>2025-12-04 22:54:00 UTC</createdTime>
+<generatorID>0D513E27-91BE-0980-08EA-E4BDEC3C5784</generatorID>
+<ownerDesignName>biblioteca</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6B5D4ECE-F2CF-BB2C-7982-9468BA670DD0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

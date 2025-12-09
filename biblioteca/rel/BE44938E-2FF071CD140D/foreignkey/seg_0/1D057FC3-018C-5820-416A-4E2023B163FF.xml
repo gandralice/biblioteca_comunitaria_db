@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1D057FC3-018C-5820-416A-4E2023B163FF" containerWithKeyObject="F9A03B7D-B062-C095-0779-989C46EB9C9A" localFKIndex="1B8B8860-93D8-DB9C-33EF-01F28E489D18" name="EMPRESTIMO_FUNCIONARIO_FK">
+<createdBy>gandr</createdBy>
+<createdTime>2025-12-04 22:54:00 UTC</createdTime>
+<generatorID>905E5087-67B9-A974-932F-5689DF17AA88</generatorID>
+<ownerDesignName>biblioteca</ownerDesignName>
+<referredTableLongName>FUNCIONARIO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>628D42BB-7C6B-08E1-06BB-A44551035F27</referredTableID>
+<keyObject>2E48D635-28EB-F6B9-66FC-B9284C0650D6</keyObject>
+<referredKeyID>2E48D635-28EB-F6B9-66FC-B9284C0650D6</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cd_funcionario</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

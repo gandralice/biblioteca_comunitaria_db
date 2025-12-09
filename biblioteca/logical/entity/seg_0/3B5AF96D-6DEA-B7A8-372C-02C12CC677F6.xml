@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3B5AF96D-6DEA-B7A8-372C-02C12CC677F6" name="LEITOR">
+<createdBy>gandr</createdBy>
+<createdTime>2025-11-25 00:21:49 UTC</createdTime>
+<ownerDesignName>biblioteca</ownerDesignName>
+<engineerTo>
+<item key="BE44938E-8037-AB84-90DC-2FF071CD140D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_leitor" id="57E25CF2-8DA5-C515-47CD-D6882A327868">
+<createdBy>gandr</createdBy>
+<createdTime>2025-11-25 00:22:02 UTC</createdTime>
+<ownerDesignName>biblioteca</ownerDesignName>
+<engineerTo>
+<item key="BE44938E-8037-AB84-90DC-2FF071CD140D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_leitor" id="B4626444-7F16-B5F3-C034-0DAA84B49713">
+<createdBy>gandr</createdBy>
+<createdTime>2025-11-25 00:22:13 UTC</createdTime>
+<ownerDesignName>biblioteca</ownerDesignName>
+<engineerTo>
+<item key="BE44938E-8037-AB84-90DC-2FF071CD140D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_telefone_leitor" id="C92F1E0A-6914-7C2C-EB4B-68D59DA70D74">
+<createdBy>gandr</createdBy>
+<createdTime>2025-11-25 00:22:32 UTC</createdTime>
+<ownerDesignName>biblioteca</ownerDesignName>
+<engineerTo>
+<item key="BE44938E-8037-AB84-90DC-2FF071CD140D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_email_leitor" id="EB68507F-1CD5-FE1F-9B67-7DD104A817F2">
+<createdBy>gandr</createdBy>
+<createdTime>2025-11-25 00:22:58 UTC</createdTime>
+<ownerDesignName>biblioteca</ownerDesignName>
+<engineerTo>
+<item key="BE44938E-8037-AB84-90DC-2FF071CD140D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_cadastro_leitor" id="90EE66BC-D611-0022-1308-9B83E05C10FF">
+<createdBy>gandr</createdBy>
+<createdTime>2025-11-25 00:25:15 UTC</createdTime>
+<ownerDesignName>biblioteca</ownerDesignName>
+<engineerTo>
+<item key="BE44938E-8037-AB84-90DC-2FF071CD140D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="954684D2-A52C-6938-6CEB-53BA81B97FCA" name="LEITOR PK">
+<createdBy>gandr</createdBy>
+<createdTime>2025-11-25 00:22:12 UTC</createdTime>
+<ownerDesignName>biblioteca</ownerDesignName>
+<engineerTo>
+<item key="BE44938E-8037-AB84-90DC-2FF071CD140D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>57E25CF2-8DA5-C515-47CD-D6882A327868</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

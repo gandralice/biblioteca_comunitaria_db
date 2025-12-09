@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="91D83BED-8A98-4D42-B143-5297CCBB6AE9" containerWithKeyObject="F9A03B7D-B062-C095-0779-989C46EB9C9A" localFKIndex="4F66C267-FC53-66DC-709D-D244FE8B61E6" name="EMPRESTIMO_LEITOR_FK">
+<createdBy>gandr</createdBy>
+<createdTime>2025-12-04 22:54:00 UTC</createdTime>
+<generatorID>D6AB30BF-09A0-8E37-A880-58E360EEEE3F</generatorID>
+<ownerDesignName>biblioteca</ownerDesignName>
+<referredTableLongName>LEITOR</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C7EF07E5-6FC2-0D4B-B235-628B91FDB313</referredTableID>
+<keyObject>32888DA2-5AED-7BEE-14AC-CA7B1A7368AF</keyObject>
+<referredKeyID>32888DA2-5AED-7BEE-14AC-CA7B1A7368AF</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cd_leitor</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F91BFF70-0702-FE94-EF22-7E48A8C24AC2" containerWithKeyObject="9C992B6F-F8C5-2FB1-0C7B-D3D21B82DB15" localFKIndex="C7E4993B-400D-7B29-EC70-998D3AC693B0" name="EMPRESTIMO_LIVRO_EMPRESTIMO_FK">
+<createdBy>gandr</createdBy>
+<createdTime>2025-12-04 22:54:00 UTC</createdTime>
+<generatorID>EB9034EB-132E-A79E-3BEE-552C2BFA157C</generatorID>
+<ownerDesignName>biblioteca</ownerDesignName>
+<referredTableLongName>EMPRESTIMO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F9A03B7D-B062-C095-0779-989C46EB9C9A</referredTableID>
+<keyObject>D2987EDC-AF10-ABA6-A1BA-EED53E96D0B6</keyObject>
+<referredKeyID>D2987EDC-AF10-ABA6-A1BA-EED53E96D0B6</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cd_emprestimo</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

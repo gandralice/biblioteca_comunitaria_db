@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F9A03B7D-B062-C095-0779-989C46EB9C9A" name="EMPRESTIMO">
+<createdBy>gandr</createdBy>
+<createdTime>2025-12-04 22:54:00 UTC</createdTime>
+<generatorID>402D32E9-8686-FC6A-9553-E2CB99A08B09</generatorID>
+<ownerDesignName>biblioteca</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_emprestimo" id="F7C9DC2B-7793-98EB-251B-9D0CE9D6C4D9">
+<createdBy>gandr</createdBy>
+<createdTime>2025-12-04 22:54:00 UTC</createdTime>
+<generatorID>D12F2CF6-5EEC-5888-3ADC-91E2F5B31B8D</generatorID>
+<ownerDesignName>biblioteca</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_emprestimo" id="E69E3165-6CBD-E57C-A519-576837D915D8">
+<createdBy>gandr</createdBy>
+<createdTime>2025-12-04 22:54:00 UTC</createdTime>
+<generatorID>273CA7B0-50C5-6A82-4D25-CEDB7108004C</generatorID>
+<ownerDesignName>biblioteca</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_vencimento_emprestimo" id="0BCA504C-CDDB-62BC-7EBE-1D2CACF4B5AF">
+<createdBy>gandr</createdBy>
+<createdTime>2025-12-04 22:54:00 UTC</createdTime>
+<generatorID>D5BD17F2-9A71-2837-EFE0-B89E870463ED</generatorID>
+<ownerDesignName>biblioteca</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_devolucao_emprestimo" id="A9B0E9BA-45F3-B3CB-2F05-56CFF85FCB9E">
+<createdBy>gandr</createdBy>
+<createdTime>2025-12-04 22:54:00 UTC</createdTime>
+<generatorID>830EFA73-E44A-4650-EC5F-28ED0F628BE7</generatorID>
+<ownerDesignName>biblioteca</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FUNCIONARIO_cd_funcionario" id="BD9BFBE9-0130-5CA4-FF75-166C0CD82497">
+<createdBy>gandr</createdBy>
+<createdTime>2025-12-04 22:54:00 UTC</createdTime>
+<generatorID>89F3FB1E-DFBB-8680-9E86-2E6C3EB4F692</generatorID>
+<ownerDesignName>biblioteca</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1D057FC3-018C-5820-416A-4E2023B163FF" referredColumn="6B5D4ECE-F2CF-BB2C-7982-9468BA670DD0"/>
+</associations>
+</Column>
+<Column name="LEITOR_cd_leitor" id="E40CDEB0-DDE5-C050-6144-92915EB754CE">
+<createdBy>gandr</createdBy>
+<createdTime>2025-12-04 22:54:00 UTC</createdTime>
+<generatorID>612447CC-51A2-EEB4-EE50-609AFFEFE420</generatorID>
+<ownerDesignName>biblioteca</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="91D83BED-8A98-4D42-B143-5297CCBB6AE9" referredColumn="FFE8B688-22ED-1096-682F-CCB6C1DA8295"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D2987EDC-AF10-ABA6-A1BA-EED53E96D0B6" name="EMPRESTIMO_PK">
+<createdBy>gandr</createdBy>
+<createdTime>2025-12-04 22:54:00 UTC</createdTime>
+<generatorID>25ADCD84-4B0A-D332-F78F-385F3A777B49</generatorID>
+<ownerDesignName>biblioteca</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F7C9DC2B-7793-98EB-251B-9D0CE9D6C4D9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1B8B8860-93D8-DB9C-33EF-01F28E489D18" name="EMPRESTIMO_FUNCIONARIO_FK">
+<createdBy>gandr</createdBy>
+<createdTime>2025-12-04 22:54:00 UTC</createdTime>
+<generatorID>905E5087-67B9-A974-932F-5689DF17AA88</generatorID>
+<ownerDesignName>biblioteca</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BD9BFBE9-0130-5CA4-FF75-166C0CD82497"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4F66C267-FC53-66DC-709D-D244FE8B61E6" name="EMPRESTIMO_LEITOR_FK">
+<createdBy>gandr</createdBy>
+<createdTime>2025-12-04 22:54:00 UTC</createdTime>
+<generatorID>D6AB30BF-09A0-8E37-A880-58E360EEEE3F</generatorID>
+<ownerDesignName>biblioteca</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E40CDEB0-DDE5-C050-6144-92915EB754CE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

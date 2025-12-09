@@ -1,0 +1,26 @@
+--listar todos os leitores cadastrados
+SELECT nm_leitor, cd_telefone_leitor, dt_cadastro_leitor 
+FROM LEITOR;
+
+--listar todos os livros emprestados
+SELECT L.nm_titulo_livro, EL.EMPRESTIMO_cd_emprestimo
+FROM EMPRESTIMO_LIVRO EL
+JOIN LIVRO L ON L.cd_livro = EL.LIVRO_cd_livro;
+
+--mostrar emprestimos em aberto
+SELECT cd_emprestimo, dt_emprestimo, dt_vencimento_emprestimo
+FROM EMPRESTIMO
+WHERE dt_devolucao_emprestimo IS NULL;
+
+--listar livros emprestados por leitor
+SELECT L.nm_leitor, LV.nm_titulo_livro
+FROM LEITOR L
+JOIN EMPRESTIMO E ON E.LEITOR_cd_leitor = L.cd_leitor
+JOIN EMPRESTIMO_LIVRO EL ON EL.EMPRESTIMO_cd_emprestimo = E.cd_emprestimo
+JOIN LIVRO LV ON LV.cd_livro = EL.LIVRO_cd_livro;
+
+--funcionario que registrou cada emprestimo
+SELECT E.cd_emprestimo, F.nm_funcionario
+FROM EMPRESTIMO E
+JOIN FUNCIONARIO F
+ON F.cd_funcionario = E.FUNCIONARIO_cd_funcionario;

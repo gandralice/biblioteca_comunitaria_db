@@ -1,0 +1,49 @@
+--funcionario
+INSERT INTO FUNCIONARIO (cd_funcionario, nm_funcionario, nm_cargo_funcionario, cd_telefone_funcionario, cd_email_funcionario)
+VALUES (1, 'Marcos Silva', 'Bibliotecário', '11987654321', 'marcos@biblioteca.com');
+
+INSERT INTO FUNCIONARIO (cd_funcionario, nm_funcionario, nm_cargo_funcionario, cd_telefone_funcionario, cd_email_funcionario)
+VALUES (2, 'Ana Souza', 'Atendente', '11999887766', 'ana@biblioteca.com');
+
+INSERT INTO FUNCIONARIO (cd_funcionario, nm_funcionario, nm_cargo_funcionario, cd_telefone_funcionario, cd_email_funcionario)
+VALUES (3, 'João Pereira', 'Auxiliar', '11988776655', 'joao@biblioteca.com');
+
+--leitor
+INSERT INTO LEITOR (cd_leitor, nm_leitor, cd_telefone_leitor, cd_email_leitor, dt_cadastro_leitor)
+VALUES (10, 'Carla Menezes', '11944445555', 'carla@email.com', SYSDATE);
+
+INSERT INTO LEITOR (cd_leitor, nm_leitor, cd_telefone_leitor, cd_email_leitor, dt_cadastro_leitor)
+VALUES (11, 'Rafael Torres', '11933334444', 'rafael@email.com', SYSDATE);
+
+INSERT INTO LEITOR (cd_leitor, nm_leitor, cd_telefone_leitor, cd_email_leitor, dt_cadastro_leitor)
+VALUES (12, 'Beatriz Lima', '11922223333', 'bia@email.com', SYSDATE);
+
+--livro
+INSERT INTO LIVRO (cd_livro, nm_titulo_livro, nm_autor_livro, nm_editora_livro, aa_publicacao_livro)
+VALUES (100, 'Dom Casmurro', 'Machado de Assis', 'Saraiva', 1899);
+
+INSERT INTO LIVRO (cd_livro, nm_titulo_livro, nm_autor_livro, nm_editora_livro, aa_publicacao_livro)
+VALUES (101, 'O Hobbit', 'J.R.R. Tolkien', 'HarperCollins', 1937);
+
+INSERT INTO LIVRO (cd_livro, nm_titulo_livro, nm_autor_livro, nm_editora_livro, aa_publicacao_livro)
+VALUES (102, '1984', 'George Orwell', 'Companhia das Letras', 1949);
+
+--emprestimo
+INSERT INTO EMPRESTIMO (cd_emprestimo, dt_emprestimo, dt_vencimento_emprestimo, dt_devolucao_emprestimo, FUNCIONARIO_cd_funcionario, LEITOR_cd_leitor)
+VALUES (500, SYSDATE, SYSDATE + 7, NULL, 1, 10);
+
+INSERT INTO EMPRESTIMO (cd_emprestimo, dt_emprestimo, dt_vencimento_emprestimo, dt_devolucao_emprestimo, FUNCIONARIO_cd_funcionario, LEITOR_cd_leitor)
+VALUES (501, SYSDATE, SYSDATE + 7, SYSDATE + 5, 2, 11);
+
+INSERT INTO EMPRESTIMO (cd_emprestimo, dt_emprestimo, dt_vencimento_emprestimo, dt_devolucao_emprestimo, FUNCIONARIO_cd_funcionario, LEITOR_cd_leitor)
+VALUES (502, SYSDATE, SYSDATE + 10, NULL, 1, 12);
+
+--emprestimo_livro
+INSERT INTO EMPRESTIMO_LIVRO (EMPRESTIMO_cd_emprestimo, LIVRO_cd_livro, ds_observacao)
+VALUES (500, 100, 'Livro em bom estado');
+
+INSERT INTO EMPRESTIMO_LIVRO (EMPRESTIMO_cd_emprestimo, LIVRO_cd_livro, ds_observacao)
+VALUES (501, 101, 'Devolvido sem danos');
+
+INSERT INTO EMPRESTIMO_LIVRO (EMPRESTIMO_cd_emprestimo, LIVRO_cd_livro, ds_observacao)
+VALUES (502, 102, 'Primeiro empréstimo do leitor');

@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9C992B6F-F8C5-2FB1-0C7B-D3D21B82DB15" name="EMPRESTIMO_LIVRO">
+<createdBy>gandr</createdBy>
+<createdTime>2025-12-04 22:54:00 UTC</createdTime>
+<generatorID>7FC7CB71-4566-37FD-8699-D62690BF7371</generatorID>
+<ownerDesignName>biblioteca</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EMPRESTIMO_cd_emprestimo" id="1B92680C-2425-4630-B130-2503DCE7A08D">
+<createdBy>gandr</createdBy>
+<createdTime>2025-12-04 22:54:00 UTC</createdTime>
+<generatorID>11D9213F-2250-F1CA-DB73-7C77C2D95283</generatorID>
+<ownerDesignName>biblioteca</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F91BFF70-0702-FE94-EF22-7E48A8C24AC2" referredColumn="F7C9DC2B-7793-98EB-251B-9D0CE9D6C4D9"/>
+</associations>
+</Column>
+<Column name="LIVRO_cd_livro" id="AD0951EB-9481-D855-4714-8BA49B242186">
+<createdBy>gandr</createdBy>
+<createdTime>2025-12-04 22:54:00 UTC</createdTime>
+<generatorID>36D5F4DB-81C0-A022-759B-FA3550E5FE73</generatorID>
+<ownerDesignName>biblioteca</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="797D0E24-7F67-70CE-7117-C1E1B7748843" referredColumn="C89992C9-1FBC-5144-26B9-67DF4B79E9F1"/>
+</associations>
+</Column>
+<Column name="ds_observacao" id="C9F5CD2A-8354-7F3E-F673-333F9F2073AA">
+<createdBy>gandr</createdBy>
+<createdTime>2025-12-04 22:54:00 UTC</createdTime>
+<generatorID>0DF57B03-A573-59D7-DE03-66802D3A67B3</generatorID>
+<ownerDesignName>biblioteca</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5929E1C5-155B-8F0A-9585-4F6540A553A6" name="EMPRESTIMO_LIVRO_PK">
+<createdBy>gandr</createdBy>
+<createdTime>2025-12-04 22:54:00 UTC</createdTime>
+<generatorID>AF96C265-6C0F-E543-3051-0DDC63A1C69E</generatorID>
+<ownerDesignName>biblioteca</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1B92680C-2425-4630-B130-2503DCE7A08D"/>
+<colUsage columnID="AD0951EB-9481-D855-4714-8BA49B242186"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C7E4993B-400D-7B29-EC70-998D3AC693B0" name="EMPRESTIMO_LIVRO_EMPRESTIMO_FK">
+<createdBy>gandr</createdBy>
+<createdTime>2025-12-04 22:54:00 UTC</createdTime>
+<generatorID>EB9034EB-132E-A79E-3BEE-552C2BFA157C</generatorID>
+<ownerDesignName>biblioteca</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1B92680C-2425-4630-B130-2503DCE7A08D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AFEA4E2B-B4FF-A4D3-7FE2-5A782CD8237B" name="EMPRESTIMO_LIVRO_LIVRO_FK">
+<createdBy>gandr</createdBy>
+<createdTime>2025-12-04 22:54:00 UTC</createdTime>
+<generatorID>45B3C93F-7BD0-E448-E501-41412FDF22A6</generatorID>
+<ownerDesignName>biblioteca</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD0951EB-9481-D855-4714-8BA49B242186"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="biblioteca" id="A61F4136-00A6-A801-5A85-2B295E7870A8" version="3.5">
+<createdBy>gandr</createdBy>
+<createdTime>2025-11-25 00:05:03 UTC</createdTime>
+<ownerDesignName>banco</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>A61F4136-00A6-A801-5A85-2B295E7870A8</designId>
+</OSDM_Design>

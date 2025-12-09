@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E3B5F9E0-0F4A-7FCC-8CBE-005DDA50002B" name="LIVRO">
+<createdBy>gandr</createdBy>
+<createdTime>2025-11-25 00:13:50 UTC</createdTime>
+<ownerDesignName>biblioteca</ownerDesignName>
+<engineerTo>
+<item key="BE44938E-8037-AB84-90DC-2FF071CD140D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_livro" id="D9C3E7BB-14F3-D1C2-AFE0-72E02AD69F07">
+<createdBy>gandr</createdBy>
+<createdTime>2025-11-25 00:13:58 UTC</createdTime>
+<ownerDesignName>biblioteca</ownerDesignName>
+<engineerTo>
+<item key="BE44938E-8037-AB84-90DC-2FF071CD140D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_titulo_livro" id="CD252F1B-0B91-9DD9-46AF-C4843F727B8B">
+<createdBy>gandr</createdBy>
+<createdTime>2025-11-25 00:18:58 UTC</createdTime>
+<ownerDesignName>biblioteca</ownerDesignName>
+<engineerTo>
+<item key="BE44938E-8037-AB84-90DC-2FF071CD140D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_autor_livro" id="8846A097-F254-988F-C7BA-A6B7012D1B23">
+<createdBy>gandr</createdBy>
+<createdTime>2025-11-25 00:19:38 UTC</createdTime>
+<ownerDesignName>biblioteca</ownerDesignName>
+<engineerTo>
+<item key="BE44938E-8037-AB84-90DC-2FF071CD140D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_editora_livro" id="C1E33655-8261-3DA9-E47B-543F8B3BC057">
+<createdBy>gandr</createdBy>
+<createdTime>2025-11-25 00:20:19 UTC</createdTime>
+<ownerDesignName>biblioteca</ownerDesignName>
+<engineerTo>
+<item key="BE44938E-8037-AB84-90DC-2FF071CD140D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="aa_publicacao_livro" id="B4957A4F-0859-F3D4-C50C-80268CA6BE1C">
+<createdBy>gandr</createdBy>
+<createdTime>2025-11-25 00:21:24 UTC</createdTime>
+<ownerDesignName>biblioteca</ownerDesignName>
+<engineerTo>
+<item key="BE44938E-8037-AB84-90DC-2FF071CD140D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="43D72732-A09D-4A5E-9AAB-236EB857822E" name="LIVRO PK">
+<createdBy>gandr</createdBy>
+<createdTime>2025-11-25 00:18:55 UTC</createdTime>
+<ownerDesignName>biblioteca</ownerDesignName>
+<engineerTo>
+<item key="BE44938E-8037-AB84-90DC-2FF071CD140D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D9C3E7BB-14F3-D1C2-AFE0-72E02AD69F07</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

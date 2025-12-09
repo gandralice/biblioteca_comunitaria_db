@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="402D32E9-8686-FC6A-9553-E2CB99A08B09" name="EMPRESTIMO">
+<createdBy>gandr</createdBy>
+<createdTime>2025-11-25 00:29:09 UTC</createdTime>
+<ownerDesignName>biblioteca</ownerDesignName>
+<engineerTo>
+<item key="BE44938E-8037-AB84-90DC-2FF071CD140D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_emprestimo" id="D12F2CF6-5EEC-5888-3ADC-91E2F5B31B8D">
+<createdBy>gandr</createdBy>
+<createdTime>2025-11-30 21:15:11 UTC</createdTime>
+<ownerDesignName>biblioteca</ownerDesignName>
+<engineerTo>
+<item key="BE44938E-8037-AB84-90DC-2FF071CD140D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_emprestimo" id="273CA7B0-50C5-6A82-4D25-CEDB7108004C">
+<createdBy>gandr</createdBy>
+<createdTime>2025-11-25 00:29:44 UTC</createdTime>
+<ownerDesignName>biblioteca</ownerDesignName>
+<engineerTo>
+<item key="BE44938E-8037-AB84-90DC-2FF071CD140D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_vencimento_emprestimo" id="D5BD17F2-9A71-2837-EFE0-B89E870463ED">
+<createdBy>gandr</createdBy>
+<createdTime>2025-11-25 00:30:08 UTC</createdTime>
+<ownerDesignName>biblioteca</ownerDesignName>
+<engineerTo>
+<item key="BE44938E-8037-AB84-90DC-2FF071CD140D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_devolucao_emprestimo" id="830EFA73-E44A-4650-EC5F-28ED0F628BE7">
+<createdBy>gandr</createdBy>
+<createdTime>2025-11-25 00:30:29 UTC</createdTime>
+<ownerDesignName>biblioteca</ownerDesignName>
+<engineerTo>
+<item key="BE44938E-8037-AB84-90DC-2FF071CD140D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_funcionario" id="89F3FB1E-DFBB-8680-9E86-2E6C3EB4F692">
+<createdBy>gandr</createdBy>
+<createdTime>2025-11-25 00:51:55 UTC</createdTime>
+<generatorID>905E5087-67B9-A974-932F-5689DF17AA88</generatorID>
+<ownerDesignName>biblioteca</ownerDesignName>
+<engineerTo>
+<item key="BE44938E-8037-AB84-90DC-2FF071CD140D" value="true"/>
+</engineerTo>
+<referedAttribute>B1B221C6-0586-2AA2-CC5C-914E604087AA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_leitor" id="612447CC-51A2-EEB4-EE50-609AFFEFE420">
+<createdBy>gandr</createdBy>
+<createdTime>2025-11-25 00:52:00 UTC</createdTime>
+<generatorID>D6AB30BF-09A0-8E37-A880-58E360EEEE3F</generatorID>
+<ownerDesignName>biblioteca</ownerDesignName>
+<engineerTo>
+<item key="BE44938E-8037-AB84-90DC-2FF071CD140D" value="true"/>
+</engineerTo>
+<referedAttribute>57E25CF2-8DA5-C515-47CD-D6882A327868</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="25ADCD84-4B0A-D332-F78F-385F3A777B49" name="EMPRESTIMO PK">
+<createdBy>gandr</createdBy>
+<createdTime>2025-11-25 00:29:42 UTC</createdTime>
+<ownerDesignName>biblioteca</ownerDesignName>
+<engineerTo>
+<item key="BE44938E-8037-AB84-90DC-2FF071CD140D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D12F2CF6-5EEC-5888-3ADC-91E2F5B31B8D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
